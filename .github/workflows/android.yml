@@ -23,7 +23,6 @@ jobs:
 
     - name: Build with Gradle
       run: |
-        rm -r $HOME/.gradle
         gradle --no-daemon build
         gradle --no-daemon assembleDebug
         find . -name '*.apk'
